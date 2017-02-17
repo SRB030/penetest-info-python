@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='materialize/css/materialize.min.css') }}"/>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/pagestyle.css') }}">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{title}}</title>
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                 <div class="nav-wrapper">
+                        <a href="#" class="brand-logo"><i class="material-icons" >{{icons}}</i>{{title}}</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                         <li><a href="/"><i class="material-icons" title='Главная'>home</i></a></li>
+                         <li><a href="/litr"><i class="material-icons" title="литература на руссокм">import_contacts</i></a></li>
+                         <li><a href="#"><i class="material-icons" title="дистрибутивы для пентестинга">polymer</i></a></li>
+                      </ul>
+                  </div>
+            </nav>
+        </header>

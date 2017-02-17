@@ -1,0 +1,33 @@
+{% include "app/header.html" %}
+<main>
+
+<div class="card">
+      <div class="card-stacked">
+          <div class="card-image">
+              <img src="{{ url_for('static',filename='image/pablo.png') }}">
+          </div>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <div class="card-content">
+          <p>
+              <h4>Что такое пентестинг?</h4>
+            Тестирование на проникновение (жарг. Пентест) — метод оценки безопасности компьютерных систем или сетей средствами моделирования атаки злоумышленника. Процесс включает в себя активный анализ системы на наличие потенциальных уязвимостей, которые могут спровоцировать некорректную работу целевой системы, либо полный отказ в обслуживании. Анализ ведется с позиции потенциального атакующего и может включать в себя активное использование уязвимостей системы. Результатом работы является отчет, содержащий в себе все найденные уязвимости системы безопасности, а также может содержать рекомендации по их устранению. Цель испытаний на проникновение — оценить возможность его осуществления и спрогнозировать экономические потери в результате успешного осуществления атаки. Испытание на проникновение является частью аудита безопасности.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+<div id="mc-container"></div>
+<script type="text/javascript">
+cackle_widget = window.cackle_widget || [];
+cackle_widget.push({widget: 'Comment', id: 51053});
+(function() {
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+})();
+</script>
+</main>
+{% include "app/footer.html" %}
